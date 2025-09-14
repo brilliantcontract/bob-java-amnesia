@@ -137,7 +137,8 @@ public class Main extends javax.swing.JFrame {
         final int hours = Integer.parseInt(this.jTextFieldTimerHours.getText());
         final int minutes = Integer.parseInt(this.jTextFieldTimerMinutes.getText());
         final TimerModel model = new TimerModel(hours, minutes);
-        final TimerPanel panel = new TimerPanel(model, this.jPanelTimers);
+        final String name = this.jTextFieldTimerName.getText();
+        final TimerPanel panel = new TimerPanel(model, this.jPanelTimers, name);
         this.jPanelTimers.add(panel);
         this.jPanelTimers.revalidate();
     }
