@@ -1,19 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package bc.bob.amnesia;
 
-/**
- *
- * @author bob
- */
 public class Main extends javax.swing.JFrame {
 
-    /**
-     * Creates new form NewJFrame
-     */
     public Main() {
         initComponents();
     }
@@ -33,9 +21,9 @@ public class Main extends javax.swing.JFrame {
         jTextFieldTimerMinutes = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jTextFieldTimerName = new javax.swing.JTextField();
-        jPanelTimers = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Amnesia");
 
         jButtonAddTimer.setText("Add");
 
@@ -47,8 +35,6 @@ public class Main extends javax.swing.JFrame {
         jTextFieldTimerMinutes.setText("0");
 
         jLabel2.setText("Name:");
-
-        jPanelTimers.setLayout(new javax.swing.BoxLayout(jPanelTimers, javax.swing.BoxLayout.Y_AXIS));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -67,7 +53,6 @@ public class Main extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextFieldTimerName, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(18, Short.MAX_VALUE))
-            .addComponent(jPanelTimers, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -83,16 +68,8 @@ public class Main extends javax.swing.JFrame {
                         .addComponent(jTextFieldTimerMinutes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel2)
                         .addComponent(jTextFieldTimerName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanelTimers, javax.swing.GroupLayout.DEFAULT_SIZE, 361, Short.MAX_VALUE)
-                .addContainerGap())
+                .addContainerGap(361, Short.MAX_VALUE))
         );
-
-        jButtonAddTimer.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonAddTimerActionPerformed(evt);
-            }
-        });
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -147,7 +124,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton jButtonAddTimer;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JPanel jPanelTimers;
     private javax.swing.JTextField jTextFieldTimerHours;
     private javax.swing.JTextField jTextFieldTimerMinutes;
     private javax.swing.JTextField jTextFieldTimerName;
